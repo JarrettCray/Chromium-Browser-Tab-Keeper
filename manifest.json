@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Chromium Browser Tab Keeper",
+  "version": "1.0",
+  "description": "Restores tabs after restart when 'Clear browsing data on exit' is enabled in Chromium-based browsers.",
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Restore Tabs"
+  }
+}
